@@ -1,0 +1,162 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    color: black;
+    padding: 50px;
+    font-size: 2em;
+    
+}
+section {
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #004d40;
+    border-radius: 10px;
+    width: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f1f8e9;
+    position: relative;
+    overflow: hidden;
+}
+button {
+    background-color: #6200ea;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 1em;
+}
+button:hover {
+    background-color: #3700b3;
+}
+
+input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #004d40;
+    font-size: 1em;
+    width: 80%;
+    margin: 10px 0;
+}
+#breathing-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+
+#breathing-circle {
+    width: 70px;
+    height: 70px;
+    background-color: #6200ea;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(98, 0, 234, 0.5);
+    animation: breathe 8s infinite ease-in-out;
+}
+
+#breathing-text {
+    font-size: 1.5em;
+    margin-top: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+@keyframes breathe {
+    0% { transform: scale(1); opacity: 0.8; }
+    50% { transform: scale(1.5); opacity: 1; }
+    100% { transform: scale(1); opacity: 0.8; }
+}
+
+.recommendation {
+    font-size: 0.9em;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Global CSS File */
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: white;
+    color: black;
+    line-height: 1.6;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+    background: transparent;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header and Navigation */
+header {
+    background: #006D5B;
+    padding: 10px;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background: #8A2BE2;
+    border-radius: 8px;
+}
+/* Main Content */
+main {
+    padding: 120px 20px 40px;
+}
+
+/* Footer */
+footer {
+    background: #006D5B;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+   
+}
+
+header img {
+    width: 100px; 
+    height: auto; 
+    padding-left: 20px;
+    padding-top: 20px;
+}
