@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Habits Tracker</title>
+    <link rel="stylesheet" href="habits.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Header with Navigation Bar -->
+        <header>
+            <img src="7b4bccb3-9a40-4eb6-baeb-fa2e0c344db2.webp" alt="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="volounteer.html">Volunteer</a></li>
+                    <li><a href="UserProfile.html">User Profile</a></li>
+                    <li><a href="feeedback.html">Feedback</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                    <li><a href="team.html">Team</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- Main Content Area -->
+        <main>
+           
+            <h1>Healthy Habits Tracker</h1>
+            
+        
+            <section>
+                <h2>Water Intake Tracker</h2>
+                <label for="water-input">Enter cups of water drank today:</label>
+                <input type="number" id="water-input" min="0">
+                <button onclick="trackWater()">Track</button>
+                <p id="water-result"></p>
+                <div class="recommendation">
+                    <p><strong>Recommended Daily Intake:</strong></p>
+                    <p>Males: 15.5 cups (3.7 liters)</p>
+                    <p>Females: 11.5 cups (2.7 liters)</p>
+                </div>
+            </section>
+        
+            <section>
+                <h2>Breathing Exercise</h2>
+                <p>Follow the animation below to practice deep breathing.</p>
+                <div id="breathing-container">
+                    <div id="breathing-circle"></div>
+                    <p id="breathing-text">Inhale...</p>
+                </div>
+            </section>
+            
+        
+            <section>
+                <h2>Sleep Cycle Calculator</h2>
+                <label for="sleep-time">Enter the time you plan to sleep:</label>
+                <input type="time" id="sleep-time">
+                <button onclick="calculateSleep()">Calculate Best Wake-up Times</button>
+                <p id="sleep-result"></p>
+                <div class="recommendation">
+                    <p><strong>Recommended Sleep Duration:</strong></p>
+                    <p>Adults: 7-9 hours</p>
+                    <p>Teens: 8-10 hours</p>
+                    <p>Children: 9-12 hours</p>
+                </div>
+            </section>
+        
+            <script src="habits.js"></script>
+
+        
+        </main>
+        
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2025 Team Website | <a href="student-editor.html">Your Editor Page</a></p>
+        </footer>
+    </div>
+</body>
+</html>
