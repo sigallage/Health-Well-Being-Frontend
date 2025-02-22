@@ -16,16 +16,20 @@ h1 {
 section {
     margin: 20px auto;
     padding: 20px;
-    border: 2px solid #004d40;
+    border: none;
     border-radius: 10px;
     width: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #f1f8e9;
+    background: linear-gradient(135deg, #004d40, #2e7d32, #66bb6a);
     position: relative;
     overflow: hidden;
+    color: white;
 }
+
+
+
 button {
-    background-color: #6200ea;
+    background-color: #4CAF50;
     color: white;
     padding: 10px 15px;
     border: none;
@@ -35,7 +39,7 @@ button {
     font-size: 1em;
 }
 button:hover {
-    background-color: #3700b3;
+    background-color: #4CAF50;
 }
 
 input {
@@ -57,16 +61,16 @@ input {
 #breathing-circle {
     width: 70px;
     height: 70px;
-    background-color: #6200ea;
+    background-color: #4CAF50;
     border-radius: 50%;
-    box-shadow: 0 0 15px rgba(98, 0, 234, 0.5);
+    box-shadow: 0 0 15px #4CAF50(98, 0, 234, 0.5);
     animation: breathe 8s infinite ease-in-out;
 }
 
 #breathing-text {
     font-size: 1.5em;
     margin-top: 10px;
-    color: #333;
+    color: white;
     font-weight: bold;
 }
 
@@ -78,8 +82,14 @@ input {
 
 .recommendation {
     font-size: 0.9em;
-    color: #333;
+    color: white;
     margin-top: 10px;
+}
+
+.banner {
+    
+    height: 500px;
+    margin-top: -100px;
 }
 
 /* Global CSS File */
@@ -136,12 +146,13 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a.active {
-    background: #8A2BE2;
+    background: #4CAF50;
     border-radius: 8px;
 }
 /* Main Content */
 main {
     padding: 120px 20px 40px;
+    
 }
 
 /* Footer */
