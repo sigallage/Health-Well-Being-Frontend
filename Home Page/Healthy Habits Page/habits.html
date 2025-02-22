@@ -26,13 +26,13 @@
         <!-- Main Content Area -->
         <main>
            
-            <h1>Healthy Habits Tracker</h1>
-            
-        
+            <img src="cropped_image.png" alt="Wellness Image" class="banner">
+
+            <!-- Water Intake Tracker -->
             <section>
                 <h2>Water Intake Tracker</h2>
                 <label for="water-input">Enter cups of water drank today:</label>
-                <input type="number" id="water-input" min="0">
+                <input type="number" id="water-input" min="0" placeholder="e.g., 8">
                 <button onclick="trackWater()">Track</button>
                 <p id="water-result"></p>
                 <div class="recommendation">
@@ -41,7 +41,8 @@
                     <p>Females: 11.5 cups (2.7 liters)</p>
                 </div>
             </section>
-        
+
+            <!-- Breathing Exercise -->
             <section>
                 <h2>Breathing Exercise</h2>
                 <p>Follow the animation below to practice deep breathing.</p>
@@ -50,8 +51,8 @@
                     <p id="breathing-text">Inhale...</p>
                 </div>
             </section>
-            
-        
+
+            <!-- Sleep Cycle Calculator -->
             <section>
                 <h2>Sleep Cycle Calculator</h2>
                 <label for="sleep-time">Enter the time you plan to sleep:</label>
@@ -65,7 +66,7 @@
                     <p>Children: 9-12 hours</p>
                 </div>
             </section>
-        
+
             <script src="habits.js"></script>
 
         
