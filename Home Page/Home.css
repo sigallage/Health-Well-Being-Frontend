@@ -7,7 +7,7 @@
 }
 
 body {
-    background: url('beautiful-tree-middle-field-covered-with-grass-with-tree-line-background.jpg') no-repeat center center fixed;
+    background: url('Images/beautiful-tree-middle-field-covered-with-grass-with-tree-line-background.jpg') no-repeat center center fixed;
     background-size: cover;
     color: white;
     text-align: center;
@@ -55,7 +55,7 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a.active {
-    background: #8A2BE2;
+    background: #4CAF50;
     border-radius: 8px;
 }
 
@@ -168,7 +168,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('beautiful-tree-middle-field-covered-with-grass-with-tree-line-background.jpg') no-repeat center center fixed;
+    background: url('Images/beautiful-tree-middle-field-covered-with-grass-with-tree-line-background.jpg') no-repeat center center fixed;
     background-size: cover;
     filter: blur(5px); 
     z-index: -1;
@@ -193,3 +193,21 @@ main, .tiles, .title, .description {
     border-radius: 10px;
     display: inline-block;
 }
+#goToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #goToTopBtn:hover {
+    background-color: #555;
+  }
+  

@@ -20,3 +20,20 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    let goToTopBtn = document.getElementById("goToTopBtn");
+
+    window.onscroll = function () {
+        if (document.documentElement.scrollTop > 100) {
+            goToTopBtn.style.display = "block";
+        } else {
+            goToTopBtn.style.display = "none";
+        }
+    };
+
+    goToTopBtn.addEventListener("click", function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+});
+
