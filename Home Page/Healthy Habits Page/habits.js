@@ -10,9 +10,9 @@ function trackWater() {
     let waterInput = document.getElementById("water-input").value;
     let result = document.getElementById("water-result");
     if (waterInput >= 15.5) {
-        result.innerHTML = "Great job! You have met the recommended intake for males.";
+        result.innerHTML = "Great job! You have met the recommended intake.";
     } else if (waterInput >= 11.5) {
-        result.innerHTML = "Great job! You have met the recommended intake for females.";
+        result.innerHTML = "Great job! You have met the recommended intake.";
     } else {
         result.innerHTML = "Keep drinking water! Stay hydrated.";
     }
@@ -61,3 +61,18 @@ function calculateSleep() {
     result.innerHTML = "Recommended wake-up times:<br>" + wakeTimes.join("<br>");
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+    let goToTopBtn = document.getElementById("goToTopBtn");
+
+    window.onscroll = function () {
+        if (document.documentElement.scrollTop > 100) {
+            goToTopBtn.style.display = "block";
+        } else {
+            goToTopBtn.style.display = "none";
+        }
+    };
+
+    goToTopBtn.addEventListener("click", function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+});
